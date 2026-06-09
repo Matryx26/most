@@ -61,7 +61,7 @@ void* samochod_watek(void* arg) {
             pthread_mutex_unlock(&stan.mutex_stan);
             wypisz_stan();
 
-            sleep(5); 
+            sleep(2);
 
             pthread_mutex_lock(&stan.mutex_stan);
             stan.na_moscie = 0;
@@ -88,7 +88,7 @@ void* samochod_watek(void* arg) {
             pthread_mutex_unlock(&stan.mutex_stan);
             wypisz_stan();
 
-            sleep(1);
+            sleep(2);
 
             pthread_mutex_lock(&stan.mutex_stan);
             stan.na_moscie = 0;
